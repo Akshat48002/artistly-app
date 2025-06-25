@@ -19,7 +19,7 @@ const ContactForm = () => {
             CONTACT US
           </p>
           <p className="text-2xl md:text-5xl font-semibold mt-2 md:mt-4 leading-snug">
-            Let&apos;s Make Your Next Event Unforgettable
+            Lets Make Your Next Event Unforgettable
           </p>
         </div>
 
