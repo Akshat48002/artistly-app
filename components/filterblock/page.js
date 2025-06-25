@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "rc-slider/assets/index.css";
 import { MapPin, ListMusic } from "lucide-react";
 
-const Filter = ({ setCategory, setLocation, priceRange, setPriceRange }) => {
+const Filter = ({ setCategory, setLocation, priceRange, setPriceRange,location,category }) => {
   const [showFilters, setShowFilters] = useState(false);
   const [showLocationDropdown, setShowLocationDropdown] = useState(false);
   const [showCategoryDropdown, setShowCategoryDropdown] = useState(false);
@@ -14,19 +14,7 @@ const Filter = ({ setCategory, setLocation, priceRange, setPriceRange }) => {
   const locationRef = useRef();
   const categoryRef = useRef();
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (locationRef.current && !locationRef.current.contains(event.target)) {
-        setShowLocationDropdown(false);
-      }
-      if (categoryRef.current && !categoryRef.current.contains(event.target)) {
-        setShowCategoryDropdown(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  
 
   return (
     <div className="relative flex items-center z-50 ">
