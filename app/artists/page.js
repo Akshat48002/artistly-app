@@ -123,7 +123,7 @@ const ArtistList = () => {
           </button>
           <button
             onClick={() => setshowModal(true)}
-            className="py-2  text-green-500 block md:hidden rounded-full hover:bg-green-600 hover:scale-105 transition-transform"
+            className="py-2 px-3 text-green-500 block md:hidden rounded-full hover:bg-green-600 hover:scale-105 transition-transform"
           >
             <Plus size={30} />
           </button>
