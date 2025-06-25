@@ -19,7 +19,7 @@ const ContactForm = () => {
             CONTACT US
           </p>
           <p className="text-2xl md:text-5xl font-semibold mt-2 md:mt-4 leading-snug">
-            Let's Make Your Next Event Unforgettable
+            Let&apos;s Make Your Next Event Unforgettable
           </p>
         </div>
 
@@ -97,11 +97,11 @@ const ContactForm = () => {
                   Call Us At
                 </h4>
                 <p className="text-gray-400 text-sm">
-                  Phone: (+63) 555 1212
+                  Phone: +63 555 1212
                   <br />
-                  Mobile: (+63) 555 0100
+                  Mobile: +63 555 0100
                   <br />
-                  Fax: (+63) 555 0101
+                  Fax: +63 555 0101
                 </p>
               </div>
             </div>
