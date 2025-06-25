@@ -32,10 +32,9 @@ const Filter = ({ setCategory, setLocation, priceRange, setPriceRange }) => {
     <div className="relative flex items-center z-50 ">
       <div
         className={`flex items-center gap-2 
-  ${showFilters ? "max-w-[300px]" : "max-w-[54px]"} 
+  ${showFilters ? "max-w-[450px]" : "max-w-[55px] md:max-w-[65px]"} 
   md:bg-white/10 md:shadow-lg border rounded-xl p-2 overflow-hidden transition-[max-width] duration-700 ease-in-out 
   ${showFilters ? "bg-white/10 shadow-lg" : "bg-transparent shadow-none"} 
-  md:max-w-none md:p-2
 `}
       >
         <button
