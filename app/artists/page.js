@@ -130,7 +130,7 @@ const ArtistList = () => {
         </div>
 
         {/* Artist Cards */}
-        <div className="flex flex-wrap justify-center md:justify-start gap-15 min-h-screen">
+        <div className="flex flex-wrap justify-center gap-15 min-h-screen">
           {filteredArtists.length > 0 ? (
             visibleArtists.map((artist, index) => (
               <motion.div
