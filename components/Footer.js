@@ -55,7 +55,7 @@ const Footer = () => {
           </p>
 
           {/* Subscribe Form */}
-          <div className="flex flex-col sm:flex-row w-full">
+          <div className="flex flex-col w-full">
             <div className="flex items-center px-4 bg-white/1 flex-grow">
               <FaEnvelope className="text-white" />
               <input
@@ -64,7 +64,7 @@ const Footer = () => {
                 className="outline-none px-3 py-3 text-white placeholder-gray-600 placeholder:text-[13px] w-full"
               />
             </div>
-            <button className="bg-[#39b54a] mt-3 sm:mt-0 sm:ml-3 px-7 uppercase text-white text-[13px] tracking-widest font-bold hover:bg-green-600 transition">
+            <button className="bg-[#39b54a] mt-3 sm:mt-0 sm:ml-3 px-7 py-4 uppercase text-white text-[13px] tracking-widest font-bold hover:bg-green-600 transition">
               Subscribe
             </button>
           </div>
