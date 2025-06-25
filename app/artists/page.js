@@ -86,7 +86,7 @@ const ArtistList = () => {
 
   return (
     <div className="min-h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-      <div className="flex flex-col mx-4 sm:mx-10 md:mx-20 mt-20 gap-9">
+      <div className="flex flex-col mx-4 sm:mx-10 md:mx-14 mt-20 gap-9">
         <p className="text-center text-3xl sm:text-4xl font-bold text-white">
           Artists
         </p>
@@ -130,7 +130,7 @@ const ArtistList = () => {
         </div>
 
         {/* Artist Cards */}
-        <div className="flex flex-wrap justify-center gap-15 min-h-screen">
+        <div className="flex flex-wrap justify-center gap-10 min-h-screen">
           {filteredArtists.length > 0 ? (
             visibleArtists.map((artist, index) => (
               <motion.div
