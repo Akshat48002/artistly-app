@@ -12,8 +12,8 @@ const ArtistCard = ({ artist, isExpanded, onClick }) => {
         isExpanded ? "scale-100 z-10" : "scale-105 hover:scale-105"
       }`}
       style={{
-        width: isExpanded ? "350px" : "300px",
-        height: isExpanded ? "450px" : "400px",
+        width: "300px",
+        height: "400px"
       }}
       layout
     >
@@ -58,11 +58,7 @@ const ArtistCard = ({ artist, isExpanded, onClick }) => {
           className="absolute inset-0 flex items-center justify-center z-30"
         >
           <div className="w-[100%] h-[100%] max-w-[350px] bg-white/1 backdrop-blur-2xl border border-white/20 rounded-3xl shadow-xl p-6 text-center space-y-4 text-white">
-            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-lg">
-  
-              <Image src={artist.image} width={300} height={300} alt={artist.name} />
-            </div>
-
+    
             {/* Name */}
             <h2 className="text-2xl font-bold text-white">{artist.name}</h2>
             <p className="text-green-400 text-sm tracking-wide">
