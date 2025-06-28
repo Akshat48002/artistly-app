@@ -119,17 +119,12 @@ const AddArtist = ({ closeModal }) => {
             </div>
             {errors.languages && <p className="text-red-400 text-xs mt-1">{errors.languages.message}</p>}
           </div>
-
-          {/* Price Range */}
-          <select
+          <input
+            type="text"
+            placeholder="Location"
             {...register("priceRange")}
-            className="w-full p-2 rounded-xl bg-white/30 text-black/70 outline-none text-sm"
-          >
-            <option value="">Select Fee Range</option>
-            <option value="0-5000">Below ₹5,00,000</option>
-            <option value="5000-10000">₹5,00,000 - ₹10,00,000</option>
-            <option value="10000-999999">Above ₹10,00,000</option>
-          </select>
+            className="w-full p-2 rounded-xl bg-white/30 text-black/70 placeholder:text-black/60 outline-none text-sm"
+          />
           {errors.priceRange && <p className="text-red-400 text-xs">{errors.priceRange.message}</p>}
 
           {/* Location */}
