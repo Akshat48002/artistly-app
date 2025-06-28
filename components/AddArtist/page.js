@@ -121,7 +121,7 @@ const AddArtist = ({ closeModal }) => {
           </div>
           <input
             type="text"
-            placeholder="Location"
+            placeholder="Price Range"
             {...register("priceRange")}
             className="w-full p-2 rounded-xl bg-white/30 text-black/70 placeholder:text-black/60 outline-none text-sm"
           />
